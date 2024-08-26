@@ -172,7 +172,8 @@
         }
 
         .contact-form {
-            max-width: 600px;
+            max-width: 600px; /* Centering form width on large screens */
+            width: 80%; /* Form width on laptops */
             margin: 0 auto;
             background-color: #222;
             padding: 20px;
@@ -221,6 +222,71 @@
         .contact-form button:hover {
             background-color: #0056b3;
         }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .header-content {
+                max-width: 90%;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .header p {
+                font-size: 1.2rem;
+            }
+
+            .header .cta-button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+
+            .hero-image {
+                display: none;
+            }
+
+            .nav {
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                justify-content: space-around;
+                position: static;
+            }
+
+            .nav a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .portfolio-item {
+                width: calc(100% - 40px);
+            }
+
+            .contact-form {
+                width: 100%; /* Full width on mobile */
+                padding: 20px 10px;
+            }
+
+            .contact-form button {
+                width: 100%;
+            }
+
+            .social-icons {
+                position: static;
+                margin: 20px 0;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -263,23 +329,14 @@
                 Your message:
                 <textarea name="message" required></textarea>
             </label>
-            <button type="submit">Send</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <div class="header">
-        <div class="header-content">
-            <h1>Hello, I'm AK</h1>
-            <p>Ethical Hacker & Developer</p>
-            <a href="https://github.com/AtharvK-Cyber?tab=repositories" target="_blank" class="cta-button">Check My Work</a>
-        </div>
-        <div class="hero-image"></div>
-    </div>
-
     <div class="social-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/kadamatharv/"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
 </body>
 
